@@ -1,3 +1,5 @@
 *.pyc
 .idea
+.tox
+.coverage
 onlinepetition/dev.db
