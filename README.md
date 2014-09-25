@@ -1,5 +1,9 @@
 #Online Petition
 
+.. image:: https://travis-ci.org/norrs/onlinepetition.svg?branch=master
+    :target: https://travis-ci.org/norrs/onlinepetition
+.. image:: https://coveralls.io/repos/norrs/onlinepetition/badge.png?branch=master :target: https://coveralls.io/r/norrs/onlinepetition?branch=master
+
 Simple system for registering and validating people signing an online petition.
 
 # Install
