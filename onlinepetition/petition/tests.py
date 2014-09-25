@@ -11,8 +11,9 @@ from petition.models import Signature, Campaign, Domain
 
 class SignatureTest(TestCase):
     def setUp(self):
-        self.sign1 = Signature.objects.create(name="Dag Olav", email="dagolav@prestegarden.com")
-        self.sign2 = Signature.objects.create(name="Ol Dagav", email="dagolap@stud.ntnu.no")
+        self.camp1 = Campaign.objects.create(title="TestCampaign", description="This is a test campaign")
+        self.sign1 = Signature.objects.create(name="Dag Olav", email="dagolav@prestegarden.com", campaign=self.camp1)
+        self.sign2 = Signature.objects.create(name="Ol Dagav", email="dagolap@stud.ntnu.no", campaign=self.camp1)
 
     def test_returns_correct_domain(self):
         self.assertEqual("prestegarden.com", self.sign1.domain)
