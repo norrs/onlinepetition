@@ -4,3 +4,6 @@ pyflakes==0.7.2
 flake8==2.0
 
 coverage
+
+# coveralls.io webservice
+coveralls
